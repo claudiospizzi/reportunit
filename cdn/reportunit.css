@@ -413,9 +413,9 @@ p.description {
 
 .pin {
     height: 96%;
-    right: 1%;
+    /*right: 1%;*/
     overflow-y: auto;
-    width: 49%;
+    /*width: 49%;*/
 }
 
 .category-list {
