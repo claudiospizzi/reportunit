@@ -390,6 +390,10 @@ p.description {
     margin-left: 4px;
 }
 
+.test-message {
+    display: none !important;
+}
+
 .test-features {
     display: none !important;
 }
