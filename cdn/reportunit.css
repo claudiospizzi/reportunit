@@ -426,6 +426,12 @@ p.description {
     margin: 8px 0;
 }
 
+.test-message-link {
+    padding-left: 10px;
+    color: #c64444;
+    font-size: 14px;
+}
+
 /* ---- [ labels ] ---- */
 .label {
     border: 1px solid transparent;
