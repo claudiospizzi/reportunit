@@ -80,7 +80,7 @@ thead tr {
         }
 
 .card-panel {
-    margin: .5rem 0;
+    margin: .5rem 0 2rem 0;
 }
 
 /* ---- [ global ] ---- */
@@ -404,7 +404,6 @@ p.description {
 }
 
 .details-container {
-    padding-bottom: 250px;
 }
 
     .details-container > div {
