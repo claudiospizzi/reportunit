@@ -2,12 +2,12 @@ var menuWidth = 260;
 var pinWidth = '49%';
 
 /* test case counts */
-var total = $('.test-name').length;
-var passed = $('td.passed').length;
-var failed = $('td.failed').length;
-var inconclusive = $('td.inconclusive').length;
-var errors = $('td.error').length;
-var skipped = $('td.skipped').length;
+var total = $('.test-name').length / 2;
+var passed = $('td.passed').length / 2;
+var failed = $('td.failed').length / 2;
+var inconclusive = $('td.inconclusive').length / 2;
+var errors = $('td.error').length / 2;
+var skipped = $('td.skipped').length / 2;
 
 $(document).ready(function () {
     /* init */
