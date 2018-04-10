@@ -12,7 +12,10 @@ var skipped = $('td.skipped').length;
 $(document).ready(function () {
     /* init */
     $('select').material_select();
-    $('.modal-trigger').leanModal();
+    //$('.modal-trigger').leanModal();
+    $('.modal-trigger').forEach(function (element) {
+        element.leanModal();
+    });
     $('.tooltipped').tooltip({ delay: 10 });
 
     /* control content container position for vertical scroll */
