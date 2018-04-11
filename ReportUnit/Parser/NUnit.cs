@@ -150,6 +150,7 @@ namespace ReportUnit.Parser
                     var test = new Model.Test();
 
                     test.Name = tc.Attribute("name").Value;
+                    test.Description = tc.Attribute("description").Value;
                     test.Status = StatusExtensions.ToStatus(tc.Attribute("result").Value);
                     
                     // main a master list of all status
@@ -177,7 +178,7 @@ namespace ReportUnit.Parser
                     test.Description = 
                         description.Count() > 0 
                             ? description.ToArray()[0].Attribute("value").Value 
-                            : "";
+                            : test.Description;
 
                     // get test case level categories
                     var categories = this.GetCategories(tc, true);
