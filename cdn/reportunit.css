@@ -33,6 +33,7 @@ td.test-name > pre {
 td .test-status {
     /*min-width: 40%;*/
     word-wrap: normal;
+    word-break: normal;
 }
 
 th, td {
@@ -421,9 +422,10 @@ p.description {
 
     .details-container th {
         word-wrap: normal;
+        word-break: normal;
     }
 
-    .details-container th {
+    .details-container td {
         vertical-align: top;
     }
 
@@ -437,6 +439,7 @@ p.description {
 .category-list {
     margin: 8px 0;
     word-wrap: normal;
+    word-break: normal;
 }
 
 .test-message-link {
