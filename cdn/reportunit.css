@@ -22,12 +22,17 @@ pre {
 }
 
 td.test-name {
-    min-width: 30%;
+    min-width: 50%;
     vertical-align: top;
 }
 
-td.test-status {
-    min-width: 40%;
+td.test-name > pre {
+    font-size: 12px !important;
+}
+
+td .test-status {
+    /*min-width: 40%;*/
+    word-wrap: normal;
 }
 
 th, td {
@@ -414,6 +419,14 @@ p.description {
         margin-top: 20px;
     }
 
+    .details-container th {
+        word-wrap: normal;
+    }
+
+    .details-container th {
+        vertical-align: top;
+    }
+
 .pin {
     height: 96%;
     /*right: 1%;*/
@@ -423,6 +436,7 @@ p.description {
 
 .category-list {
     margin: 8px 0;
+    word-wrap: normal;
 }
 
 .test-message-link {
