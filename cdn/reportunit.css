@@ -1,5 +1,6 @@
 html, body {
     background-color: #eceff5;
+    overflow-y: scroll;
 }
 
 body {
@@ -30,7 +31,7 @@ td.test-name > pre {
     font-size: 12px !important;
 }
 
-td .test-status {
+td.test-status {
     /*min-width: 40%;*/
     word-wrap: normal;
     word-break: normal;
