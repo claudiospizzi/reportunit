@@ -31,6 +31,11 @@ td.test-name > pre {
     font-size: 12px !important;
 }
 
+td.test-name > span.description {
+    font-style: italic;
+    color: #666;
+}
+
 td.test-status {
     /*min-width: 40%;*/
     word-wrap: normal;
