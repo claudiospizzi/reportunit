@@ -33,7 +33,7 @@ td.test-name > pre {
 
 td.test-name > span.description {
     font-style: italic;
-    color: #666;
+    color: #888;
 }
 
 td.test-status {
