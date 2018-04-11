@@ -14,6 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -135,6 +135,10 @@
     <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">ILRepack.exe /out:$(TargetFileName) /ndebug $(TargetFileName) RazorEngine.dll System.Web.Razor.dll
 cp -a $(TargetPath) $(ProjectDir)bin/</PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">ILRepack.exe /out:$(TargetFileName) /ndebug $(TargetFileName) RazorEngine.dll System.Web.Razor.dll
+xcopy $(TargetPath) $(ProjectDir)bin\ /Y /S</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>ILRepack.exe /out:$(TargetFileName) /ndebug $(TargetFileName) RazorEngine.dll System.Web.Razor.dll
 xcopy $(TargetPath) $(ProjectDir)bin\ /Y /S</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

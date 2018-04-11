@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportUnit", "ReportUnit\ReportUnit.csproj", "{12B65E5C-465A-4EB5-BCDB-0F79224A9BCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportUnitTest", "ReportUnitTest\ReportUnitTest.csproj", "{E99B267C-DA6E-4FDE-9FE9-979D6D52A966}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cdn", "cdn", "{05536F99-8C0B-4D32-B3F8-3A6A81BF5952}"
+	ProjectSection(SolutionItems) = preProject
+		cdn\reportunit.css = cdn\reportunit.css
+		cdn\reportunit.js = cdn\reportunit.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E986D4B7-AB83-4D50-B161-FE264485A540}
 	EndGlobalSection
 EndGlobal
