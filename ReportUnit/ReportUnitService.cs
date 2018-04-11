@@ -69,7 +69,7 @@ namespace ReportUnit
                 Logger.GetLogger().Fatal("No reports added - invalid files?");
                 return false;
             }
-            if (compositeTemplate.ReportList.Count > 1)
+            if (compositeTemplate.ReportList.Count > 0)
             {
                 compositeTemplate.SideNavLinks = compositeTemplate.SideNavLinks.Insert(0, Templates.SideNav.IndexLink);
 
