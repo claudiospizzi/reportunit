@@ -575,6 +575,10 @@ td > .label {
 }
 
 @media (max-width: 992px) {
+    nav {
+        padding-left: 10px;
+    }
+
     .main {
         padding-left: 0;
     }
@@ -588,7 +592,7 @@ td > .label {
     }
 
     .main-wrap {
-        padding-left: 40px;
+        padding-left: 10px;
     }
 
     .button-collapse {
@@ -605,16 +609,5 @@ td > .label {
 
     .filters .col.s3 {
         width: 40%;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1300px) {
-    /* fix for pie charts going out of bounds */
-    .main-wrap .row:first-child .col.s12 {
-        width: 33.33% !important;
-    }
-
-    .filters .toggle-type {
-        display: none;
     }
 }
